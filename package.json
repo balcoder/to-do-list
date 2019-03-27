@@ -1,11 +1,21 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
-  "description": "To do list using express mongo\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D and mongodb",
+  "description": "To do list using express mongo express and mongodb",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "devstart": "nodemon index.js"
   },
   "author": "Des Barrett",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.20"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
 }

@@ -1,0 +1,1 @@
+body{font-family:'Nunito', sans-serif}#todoInput{border:none;border-bottom:1px solid #000;width:80%}#todoInput:focus{outline:none}header,section{display:flex;flex-direction:column;align-items:center}ul{margin-left:6rem}h1{font-size:48px}.task{color:green}.task:hover{background-color:#ddd}.done{text-decoration:line-through;color:#bdc3c7}

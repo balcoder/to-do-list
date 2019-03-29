@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "devstart": "nodemon index.js"
+    "devstart": "nodemon index.js",
+    "scss": "node-sass --output-style compressed -o public scss",
+    "watch:css": "onchange \"scss\" -- npm run scss",
+    "watch:all": "npm-run-all -p devstart watch:css"
   },
   "author": "Des Barrett",
   "license": "MIT",
@@ -16,6 +19,9 @@
     "mongoose": "^5.4.20"
   },
   "devDependencies": {
-    "nodemon": "^1.18.10"
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^5.2.0"
   }
 }
